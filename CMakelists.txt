@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.15)
+
+project(raylib_cpp LANGUAGES C CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(RAYLIB_DIR "C:/raylib/raylib/src")
+
+add_executable(game
+    main.cpp
+)
+
+target_include_directories(game PRIVATE ${RAYLIB_DIR})
+target_link_directories(game PRIVATE ${RAYLIB_DIR})
+
+target_link_libraries(game
+    raylib
+    opengl32
+    gdi32
+    winmm
+)
