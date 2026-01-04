@@ -3,11 +3,11 @@
         {
             "name": "windows-gcc-x64",
             "includePath": [
-                "${workspaceFolder}/**",
-                "C:\\raylib\\raylib\\src/**",
-                "C:\\raylib\\raylib\\src\\platforms/**",
-                "C:\\raylib\\raylib\\src\\external/**",
-                "C:\\raylib\\raylib\\src\\external\\glfw\\src/**"
+                "c:/Users/balaj/vscode/c++/physics/**",
+                "C:/raylib/raylib/src/**",
+                "C:/raylib/raylib/src/platforms/**",
+                "C:/raylib/raylib/src/external/**",
+                "C:/raylib/raylib/src/external/glfw/src/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -16,10 +16,16 @@
                 "GRAPHICS_API_OPENGL_33",
                 "PLATFORM_DESKTOP"
             ],
-            "compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
-            "cStandard": "${default}",
-            "cppStandard": "${default}",
-            "intelliSenseMode": "windows-gcc-x64"
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPathInCppPropertiesJson": "C:/msys64/mingw64/bin/g++.exe",
+            "mergeConfigurations": false,
+            "recursiveIncludes": {},
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17"
         },
         {
             "name": "Mac",
@@ -43,9 +49,9 @@
             "intelliSenseMode": "clang-x64"
         },
         {
-            "name": "Linux",
+            "name": "window",
             "includePath": [
-                "<path_to_raylib>/src/**",
+                "<path_to_raylib/src/**",
                 "${workspaceFolder}/**"
             ],
             "defines": [
@@ -55,7 +61,7 @@
                 "GRAPHICS_API_OPENGL_33",
                 "PLATFORM_DESKTOP"
             ],
-            "compilerPath": "C:/msys64/mingw64/bin/clang.exe",
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
             "cStandard": "c11",
             "cppStandard": "c++14",
             "intelliSenseMode": "clang-x64"

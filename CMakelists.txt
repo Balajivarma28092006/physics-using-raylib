@@ -9,6 +9,7 @@ set(RAYLIB_DIR "C:/raylib/raylib/src")
 
 add_executable(game
     main.cpp
+    utils/Ball.cpp
 )
 
 target_include_directories(game PRIVATE ${RAYLIB_DIR})
